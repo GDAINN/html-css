@@ -8,8 +8,40 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.py" method="get" autocomplete="on">
-        
-        
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                
+                
+                
+                <option value=""select>---Escolha---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                
+                <optgroup label="região suldeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="ADM">Administração</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem..."></textarea>
+        </p>
         
         
         
